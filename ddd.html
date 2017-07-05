@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="fa">
+        敌军还有<span class="box">30</span>秒到达战场！
+    </div>
+    
+
+    
+    
+    <script src="./jquery-1.9.1.js">
+    </script>
+    <script>
+        var a = 29;
+
+        var timer1 = setInterval(function () {
+            $('.box').html(a);
+            a--;
+
+            if (a == -1) {
+                window.clearInterval(timer1);
+                while(true) {
+                    alert("赵建凯S.B")
+                }
+            }
+
+        }, 1000);
+    </script>
+
+</body>
+
+</html>
